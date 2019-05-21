@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">healthtracker</string>
+    <string name="counter">0</string>
+    <string name="fingerButton">Exercise!!!</string>
+
+
 </resources>
