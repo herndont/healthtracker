@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_dark">
+    android:background="#558b2f">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,13 +13,20 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Main"
-            android:textSize="50dp"
             android:id="@+id/textView"
+            android:layout_width="307dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="130dp"
             android:layout_marginTop="200dp"
-            android:layout_marginLeft="130dp"/>
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="405dp"
+            android:text="Health Tracker"
+            android:textAlignment="center"
+            android:textSize="50dp" />
 
 
     </RelativeLayout>
