@@ -1,6 +1,7 @@
 package com.example.healthtracker;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.Date;
@@ -29,12 +30,10 @@ public class ExerciseDiaryActivity extends AppCompatActivity {
         db.exerciseDao().add(ToeStrength);
 
         Exercise exercise = db.exerciseDao().findByName("Strong Toe");
-        String t = "What what";
 
 
         exerciseText = findViewById(R.id.exerciseText);
         exerciseText.setText(exercise.getTitle());
     }
-
 
 }
