@@ -26,3 +26,19 @@
 
     
 #### Lab 27
+        Lab 27 consists of creating a separate activity page to handle the finger exercise and to leave the main activity page completely 
+        free and open to navigation and welcome page use. 
+        
+        Instead of making the button with intent to navigate between pages, I went with the other option granted on the lab and that was
+        to try and implement a navigation window/drawer. I figured this would look a lot cleaner over the next few weeks as this project
+        is going to continue to add on more and more activities and will inevitably need to have a navigation window factored in at some
+        point.
+        
+        Lab 27 Resources
+        - Navigation Drawer: https://stablekernel.com/using-fragments-to-simplify-android-navigation-drawers/
+        
+![screenshot4](screenshots/lab27/screenshot4.PNG)
+![screenshot5](screenshots/lab27/screenshot5.PNG)
+![screenshot6](screenshots/lab27/screenshot6.PNG)
+![screenshot7](screenshots/lab27/screenshot7.PNG)
+
