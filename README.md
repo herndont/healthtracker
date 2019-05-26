@@ -49,4 +49,22 @@
     
     Currently, I have gotten the database setup, and have an exercise added to the database and displaying on the activity page. What I don't
     have is an operational input form on that page.
+    
+![screenshot7](screenshots/lab28/screenshot8.PNG)
+  
+  
+#### Lab 29
+    Lab 29 is the creation and implementation of a RecycleView to show Exercises from the database. The Exercises should be displayed
+    where they previously were on the activity page except with the recycleView instead of the textView.
+    
+    *****************************Update*************************************
+![screenshot4](screenshots/lab29/screenshot9.PNG)
+![screenshot5](screenshots/lab29/screenshot10.PNG)
+![screenshot6](screenshots/lab29/screenshot11.PNG)
+![screenshot7](screenshots/lab29/screenshot12.PNG)
+********************************Update**************************************
+
+
+#### Lab 30
+    
 
