@@ -1,15 +1,16 @@
 package com.example.healthtracker;
 
 import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import com.google.android.material.navigation.NavigationView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,10 +44,15 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, FingerActivity.class);
                         startActivity(intent);
                         break;
+
                     case R.id.nav_item_2:
                         Toast.makeText(MainActivity.this, "You're already at Home!",Toast.LENGTH_SHORT).show();break;
-//                    case R.id.mycart:
-//                        Toast.makeText(MainActivity.this, "My Cart",Toast.LENGTH_SHORT).show();break;
+
+                    case R.id.nav_item_3:
+                        Intent intent2 = new Intent(MainActivity.this, ExerciseDiaryActivity.class);
+                        startActivity(intent2);
+                        break;
+//
                     default:
                         return true;
                 }
