@@ -4,7 +4,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -30,9 +29,9 @@ public class ExerciseLayoutAdapter extends RecyclerView.Adapter<ExerciseLayoutAd
 
         public void setExercise(Exercise exercise) {
             this.textTitle.setText(exercise.getTitle());
-            this.textQuantity.setText(exercise.getQuantity());
+            this.textQuantity.setText(Integer.toString(exercise.getQuantity()));
             this.textDescription.setText(exercise.getDescription());
-//            this.textDate.setText(exercise.getPerformedDate());
+            this.textDate.setText(exercise.getPerformedDate().toString());
         }
     }
 

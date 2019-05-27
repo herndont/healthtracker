@@ -3,7 +3,9 @@ package com.example.healthtracker;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,23 +21,21 @@ public class ExerciseDiaryActivity extends AppCompatActivity {
 
     Button button;
 
+    ExerciseDatabase db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise_diary);
 
 
-        ExerciseDatabase db = Room.databaseBuilder(getApplicationContext(), ExerciseDatabase.class,"exercise-db")
+        db = Room.databaseBuilder(getApplicationContext(), ExerciseDatabase.class,"exercise-db")
                .allowMainThreadQueries()
                 .build();
 
         Date date = new Date();
         long time = date.getTime();
 
-
-        Exercise ToeStrength = new Exercise("Strong Toe", 5, "Core toe strength is the most under utilized exercise around. Have strong toesies!", date);
-
-        db.exerciseDao().add(ToeStrength);
 
         List<Exercise> exercises = db.exerciseDao().getAll();
 
@@ -50,18 +50,30 @@ public class ExerciseDiaryActivity extends AppCompatActivity {
 
     }
 
-    public void submitButtonClick(View view) {
-        button = findViewById(R.id.submitButton);
-        String title;
-        String quantity;
-        String description;
-        Date date;
+    public void submitButtonClick(View view) throws Exception{
 
-        View layout = findViewById(R.id.textInputLayout);
-        title = layout.findViewById(R.id.title);
-        quantity = findViewById(R.id.quantity);
-        description = layout.findViewById(R.id.description);
-        date = layout.findViewById(R.id.date);
+        EditText titleInput = findViewById(R.id.title);
+        EditText quantityInput = findViewById(R.id.quantity);
+        EditText descriptionInput = findViewById(R.id.description);
+        EditText dateInput = findViewById(R.id.date);
+
+        String title = titleInput.getText().toString();
+        String quantity = quantityInput.getText().toString();
+        String description = descriptionInput.getText().toString();
+        String date = dateInput.getText().toString();
+
+        int quant = Integer.parseInt(quantity);
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+        Date performedDate = sdf.parse(date);
+
+        Exercise exercise = new Exercise(title, quant, description, performedDate);
+
+        db.exerciseDao().add(exercise);
+
+        finish();
+        startActivity(getIntent());
+
     }
 
 }
