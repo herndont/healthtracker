@@ -62,6 +62,14 @@
 
 
 
-#### Lab 30
+#### Lab 31
+    Lab 31 requires that we implement testing for the main processes within the application. Things like the carousel, counter, and database 
+    adding an exercise.
+    
+    I tried to add a shared preferences username, but need to figure out how to take and xml view and add it to all pages.
+    
+    *****I am going to need to find some tutorials online to get a better idea of how to do these tests because these are not making a whole lot
+    of sense to me, nor is the demo code from yesterday. I tried to watch the FrontRowViews from yesterday and that never got changed to cover the 
+    correct class time.
     
 
