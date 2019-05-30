@@ -8,14 +8,14 @@ import org.junit.Test;
 
 public class FingerActivityTest {
 
-    @Rule
-    public ActivityTestRule<FingerActivity> activityTestRule = new Ac
-
-    @Test
-    public void buttonClicking() {
-        for(int i = 0; i < 20; i++) {
-            R.id.button.perform(buttonClicking());
-        }
-    }
+//    @Rule
+//    public ActivityTestRule<FingerActivity> activityTestRule = new Ac
+//
+//    @Test
+//    public void buttonClicking() {
+//        for(int i = 0; i < 20; i++) {
+//            R.id.button.perform(buttonClicking());
+//        }
+//    }
 
 }

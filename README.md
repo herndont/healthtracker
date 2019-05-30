@@ -50,7 +50,7 @@
     Currently, I have gotten the database setup, and have an exercise added to the database and displaying on the activity page. What I don't
     have is an operational input form on that page.
     
-![screenshot7](screenshots/lab28/screenshot8.PNG)
+![screenshot8](screenshots/lab28/screenshot8.PNG)
   
   
 #### Lab 29
@@ -58,7 +58,7 @@
     where they previously were on the activity page except with the recycleView instead of the textView.
     
 
-![screenshot4](screenshots/lab29/screenshot9.PNG)
+![screenshot9](screenshots/lab29/screenshot9.PNG)
 
 
 
@@ -72,4 +72,19 @@
     of sense to me, nor is the demo code from yesterday. I tried to watch the FrontRowViews from yesterday and that never got changed to cover the 
     correct class time.
     
+#### Lab 34
+    Using string.xml
+    Lab 34 reuires that we remove all of the hardcoded string from our UI and use the `strings.xml` fille.
+    We should continue using strings.xml for all future additions to the application.
+    
+    Location
+    This lab also requires that when a user adds an exercise, they should be able to include their 
+    current location. Update of the models is necessary to appropriately display the location within
+    the `ListView`
+    
+![Readme for backend work:](https://github.com/herndont/health-tracker-backend/tree/lab32)
+
+***********************Add screenshots when this lab is complete ********************
+    ![screenshot10]()
+
 
