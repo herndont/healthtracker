@@ -47,8 +47,6 @@
     Lab 28 is the creation of a database which is used to store Exercises. Each exercise has a title, quatity, description, and a timeStamp.
     The exercises will be displayed on a seperate activity page with an input form available to add additional exercises to the page list.
     
-    Currently, I have gotten the database setup, and have an exercise added to the database and displaying on the activity page. What I don't
-    have is an operational input form on that page.
     
 ![screenshot8](screenshots/lab28/screenshot8.PNG)
   
