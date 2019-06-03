@@ -4,6 +4,10 @@
     <string name="fingerButton">Exercise!!!</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="headerText">Health Tracker</string>
+    <string name="usernameInputText">Username</string>
+    <string name="usernameAssignButton">Enter</string>
+
 
 
 </resources>
