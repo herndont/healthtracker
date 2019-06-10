@@ -1,4 +1,4 @@
-package com.example.healthtracker;
+package com.example.healthtracker.database;
 
 import java.util.Date;
 
@@ -8,13 +8,14 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Exercise {
-    @PrimaryKey(autoGenerate = true)
-    private long id;
+
     private String title;
     private int quantity;
     private String description;
     private Date performedDate;
 
+    @PrimaryKey(autoGenerate = true)
+    private long id;
 
     @Ignore
     public Exercise(String title, int quantity, String description, Date performedDate) {

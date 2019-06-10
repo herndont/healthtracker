@@ -5,6 +5,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.healthtracker.database.Exercise;
+import com.example.healthtracker.database.ExerciseDatabase;
+import com.example.healthtracker.recycler.ExerciseLayoutAdapter;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;

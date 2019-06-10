@@ -1,7 +1,6 @@
-package com.example.healthtracker;
+package com.example.healthtracker.database;
 
 import java.util.List;
-
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
